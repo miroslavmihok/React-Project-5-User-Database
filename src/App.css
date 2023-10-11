@@ -1,0 +1,126 @@
+html {
+  height: 100%;
+}
+
+body {
+  z-index: -1;
+  background-color: rgb(56, 56, 56);
+  min-height: 100%;
+  width: 100%;
+}
+
+.App {
+  position: relative;
+  min-height: calc(100vh - 2rem);
+  padding-top: 2rem;
+}
+
+form {
+  background-color: white;
+  border-radius: 8px;
+  width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+form div {
+  width: 100%;
+}
+
+form label {
+  font-weight: 700;
+  display: flex;
+}
+
+form input {
+  border-color: rgb(85, 23, 117);
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0.5rem 0;
+}
+
+form button {
+  background-color: rgb(85, 23, 117);
+  color: white;
+  width: 5rem;
+  margin-top: 0.5rem;
+  padding: 5px;
+}
+
+/* USER ENTRIES */
+
+.user_entry {
+  background-color: white;
+  border-radius: 8px;
+  width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.user_entry p {
+  border: 1px solid black;
+  margin: 0 0 10px auto;
+  padding: 0.5rem;
+}
+
+.user_entry p:last-child {
+  margin: 0;
+}
+
+.noEntry {
+  text-align: center; 
+  color: white; 
+  font-size: 20px;
+}
+
+/* ERROR MESSAGE */
+
+.container {
+  background-color: rgba(59, 59, 59, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+
+.error-message {
+  width: 500px;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.error-message_title {
+  background-color: rgb(85, 23, 117);
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.error-message_content {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.error-message_content button {
+  background-color: rgb(85, 23, 117);
+  color: white;
+  width: 5rem;
+  margin-top: 0.5rem;
+  padding: 5px;
+}
+
+.button-end {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
